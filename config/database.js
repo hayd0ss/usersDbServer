@@ -6,7 +6,7 @@ client.connect(err => {
   if (err) throw err;
 });
 
-const collection = client.db("vc_c2c_vinyls_db").collection("vcVinylCollection");
+const collection = client.db("vc_c2c_user_db").collection("vcUserLoginCollection");
 
 module.exports = { collection, ObjectId }
 
