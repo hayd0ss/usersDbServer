@@ -61,5 +61,5 @@ router
     res.send("1 document deleted.")
   })
 
-app.use("/.netlify/functions/api/", router)
+app.use("/.netlify/functions/api/{users}", router)
 module.exports.handler = serverless(app)
